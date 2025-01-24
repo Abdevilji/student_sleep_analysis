@@ -9,7 +9,10 @@ This project analyzes the sleep patterns of students to predict and classify hea
   - `1`: Sleep hours ≥ 8 (Healthy sleep)
   - `0`: Sleep hours < 8 (Insufficient sleep)  
 - **Modeling**: Implements Gradient Boosted Trees (GBT) using Spark MLlib to classify and predict sleep behaviors.  
-- **Big Data Integration**: Combines Spark and Hadoop to handle large-scale datasets, ensuring scalability and efficiency.  
+- **Big Data Integration**: Combines Spark and Hadoop to handle large-scale datasets, ensuring scalability and efficiency.
+
+## Model Performance
+- The performance of the Gradient Boosted Trees model, including metrics such as accuracy, precision, recall, F1-score, and ROC-AUC, are detailed in the presentation uploaded to this repository. Please refer to the Performance Analysis PPT for complete insights.
 
 ## Objectives
 
