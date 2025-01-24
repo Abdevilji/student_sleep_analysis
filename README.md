@@ -1,33 +1,44 @@
 # Student Sleep Analysis Using Big Data (Spark & Hadoop)
 
-This project analyzes the sleep patterns of students to predict and classify healthy sleep behavior using Big Data tools. By leveraging Spark MLlib and Hadoop, we process and analyze large datasets efficiently to gain insights into student well-being.
+This project leverages Big Data tools and machine learning techniques to analyze student sleep patterns, classify healthy and unhealthy sleep behaviors, and predict future trends. By utilizing Hadoop for data processing and Apache Spark MLlib for machine learning, the project handles large-scale datasets efficiently, providing actionable insights into student well-being.
 
 ## Key Features
 
-- **Data Processing**: Utilizes Hadoop for storing and processing sleep data at scale.  
-- **Feature Engineering**: Sleep hours are analyzed, and a binary label is created:
-  - `1`: Sleep hours ≥ 8 (Healthy sleep)
-  - `0`: Sleep hours < 8 (Insufficient sleep)  
-- **Modeling**: Implements Gradient Boosted Trees (GBT) using Spark MLlib to classify and predict sleep behaviors.  
-- **Big Data Integration**: Combines Spark and Hadoop to handle large-scale datasets, ensuring scalability and efficiency.
-
-## Model Performance
-- The performance of the Gradient Boosted Trees model, including metrics such as accuracy, precision, recall, F1-score, and ROC-AUC, are detailed in the presentation uploaded to this repository. Please refer to the Performance Analysis PPT for complete insights.
+- **Data Processing**: Hadoop is used for storing and processing large-scale sleep data.  
+- **Feature Engineering**:  
+  - The dataset was transformed to include a binary label:  
+    - `1`: Sleep hours ≥ 8 (Healthy sleep).  
+    - `0`: Sleep hours < 8 (Insufficient sleep).  
+- **Machine Learning Models**: Implemented multiple machine learning techniques, including:  
+  - **Gradient Boosted Trees (GBT)** for high-performance classification.  
+  - Other classification models such as Logistic Regression and Decision Trees for comparative analysis.  
+- **Scalable Architecture**: Combines the power of Hadoop and Spark to manage and process large datasets efficiently.  
 
 ## Objectives
 
-- Classify students based on sleep hours to identify those with healthy or unhealthy sleep patterns.  
-- Provide actionable insights into student sleep behaviors for further research or applications in well-being initiatives.
+- Analyze student sleep data to identify patterns and classify sleep behavior.  
+- Provide a predictive model to assess the impact of sleep habits on well-being.  
+- Support further research and interventions aimed at improving student health.
 
 ## Tools & Technologies
 
 - **Hadoop**: Distributed data storage and processing.  
 - **Apache Spark**: Machine learning and data analysis using Spark MLlib.  
-- **Python/Scala**: Implementation of data pipelines and machine learning models.
+- **Python/Scala**: For implementing data pipelines and machine learning models.
+
+## Model Performance
+
+The evaluation of various machine learning models, including **Gradient Boosted Trees**, **Logistic Regression**, and **Decision Trees**, is documented in detail. Metrics such as **accuracy**, **precision**, **recall**, **F1-score**, and **ROC-AUC** are included to compare model performance.  
+
+For a comprehensive view of the results and visualizations, refer to the **Performance Analysis PPT** uploaded to this repository.  
 
 ## Usage
 
-1. Preprocess sleep data using Hadoop for distributed storage.  
-2. Use Spark to create and transform datasets for analysis.  
-3. Train Gradient Boosted Trees for classification tasks.  
-4. Evaluate model performance and predict sleep behavior labels.
+1. Preprocess and store raw sleep data using Hadoop.  
+2. Use Spark for feature engineering and data transformation.  
+3. Train and evaluate machine learning models to classify sleep behavior.  
+4. Compare model performance and fine-tune the best-performing model.  
+
+## Results
+
+The machine learning models demonstrated reliable performance, with Gradient Boosted Trees achieving the highest accuracy among all methods. Detailed insights, including the impact of sleep habits on health, are outlined in the accompanying presentation.
